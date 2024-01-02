@@ -13,6 +13,7 @@ FRAMERATE = 7
 pygame.init()
 pygame.font.init()
 screen = pygame.display.set_mode((MAX_HEIGHT, MAX_WIDTH))
+pygame.display.set_caption("Snake Attempt 3")
 clock = pygame.time.Clock()
 running = True
 dt = 0
@@ -107,6 +108,7 @@ while running:
     score_text = score_font.render(f"Score: {get_score()}", False, text_color)
     score_text_pos = score_text.get_rect(centerx=MAX_WIDTH/2, y=MAX_HEIGHT-20)
     screen.blit(score_text, score_text_pos)
+    pygame.display.set_caption(f"Score: {get_score()}")
 
     # # constant movement
     # keys = pygame.key.get_pressed()
@@ -175,3 +177,4 @@ while running:
     dt = clock.tick(60) / 1000
 
 time.sleep(2)
+print(f"Final score: {get_score()}")
