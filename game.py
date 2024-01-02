@@ -75,6 +75,7 @@ def get_score():
 
 apple_eaten = True
 apple_pos = (0, 0)
+apple_color = get_random_color()
 
 while running:
     for event in pygame.event.get():
@@ -98,7 +99,9 @@ while running:
     if apple_eaten:
         apple_pos = create_apple_pos()
         apple_eaten = False
-    pygame.draw.circle(screen, get_random_color(), apple_pos, APPLE_RADIUS)
+    if has_time_passed(1 / FRAMERATE, old_frame_advance_time):
+        apple_color = get_random_color()
+    pygame.draw.circle(screen, apple_color, apple_pos, APPLE_RADIUS)
 
     score_font = pygame.font.Font(None, 32)
     score_text = score_font.render(f"Score: {get_score()}", False, text_color)
