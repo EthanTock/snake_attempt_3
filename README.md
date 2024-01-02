@@ -11,3 +11,13 @@ directory you want to clone this repository into.
 Make sure that pygame is installed by running `python3 -m pip install pygame` in the `<directory>`.  
 **BEFORE RUNNING: This game contains flashing lights. Do not run this if you have photosensitive epilepsy.**  
 To run the program, run `python3 game.py` from the `<directory>`.
+
+## How to play
+Upon loading, the game should look like this:
+ADD IMAGE HERE!!!  
+Start the game by pressing any arrow key. Your snake will start moving in this direction.  
+The snake is controlled with the arrow keys.
+
+The objective of the game is to eat the small fruits on the ground, which increase your score and the snake's length.
+Try to eat as many as you can without running into yourself!
+ADD IMAGE HERE!!!
