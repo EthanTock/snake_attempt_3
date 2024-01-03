@@ -1,6 +1,7 @@
 # Snake Attempt 3
 
 This is my third, most successful attempt at recreating the classic game Snake.  
+Note: Snake is not my own idea. This is just my own reprogramming of it using Pygame.  
 **WARNING: This game contains flashing lights. Do not run this if you have photosensitive epilepsy.**
 
 
